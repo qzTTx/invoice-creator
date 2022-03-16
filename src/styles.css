@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+
+:root {
+    --lightblue: #D1D4F4;
+    --blue: #3A69D2;
+    --darkblue: #1F2937;
+    --gray: #D5D4D8;
+    --white: #FFFFFF;
+    --black: black;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: var(--white);
+}
+
+main {
+    width: 550px;
+    height: 550px;
+    background-color: var(--darkblue);
+}
+
+header {
+    height: 30%;
+    background-color: var(--blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title, .subtitle {
+    margin: 0;
+}
+
+.title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 40px;
+    letter-spacing: -0.02em;
+}
+
+.subtitle {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+
+    color: #FFFFFF;
+}
+
+.invoices {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+    margin: 40px;
+}
+
+.invocie-btn {
+    padding: 9px 13px;
+
+    width: 143.17px;
+    height: 45px;
+
+    background: var(--lightblue);
+    border-radius: 7px;
+    border: none;
+    cursor: pointer;
+}
+
+.invocie-btn:hover, .invocie-btn:target {
+    background-color: cornflowerblue;
+    color: var(--gray);
+    font-weight: 700;
+}
+
+.tasks {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.labels {
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 20px;
+
+    color: #D5D4D8;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+hr {
+    width: 100%;
+    border: 1px solid #C3C6DB;
+    opacity: .4;
+}
+
+.total {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 32px;
+
+    text-align: right;
+
+    color: #F5F5F5;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+}
+
+.sendinvoice-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 9px 17px 9px 15px;
+
+    gap: 10px;
+    position: absolute;
+    height: 44px;
+    width: 300px;
+
+    margin: 0 auto;
+
+    background: #3A69D2;
+    color: var(--white);
+
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    border-radius: 7px;
+    border: none;
+}
+
+.sendinvoice-btn:hover {
+    background: var(--lightblue);
+    cursor: pointer;
+}
